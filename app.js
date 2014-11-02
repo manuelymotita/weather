@@ -73,6 +73,17 @@ $(document).ready(function(){
 			$(icon).add( <img src="", icon );
 			}			
 			
-	function 
+	function parseDay(condition) {
+			
+			switch(condition) {
+			case "clear-day":
+			var icon = "<img src="images/sunny.png" />";
+			case "clear-night":
+			var icon ="<img src="images/night.png" />";
+			case "rain":
+			var icon="<img src="images/rain.png"/>"
+			}
+			
+	}
 			
 	};
