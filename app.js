@@ -70,6 +70,7 @@ $(document).ready(function(){
 	function parseWeather(data){
 			
 			$('#temp').text("Currently: " + data.currently.apparentTemperature);
+			$('#sum').text(data.currently.summary);
 	}
 	
 	/*function parseWeather(data) {
