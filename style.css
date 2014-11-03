@@ -5,3 +5,14 @@
 	height: 800px;
 	background-color: #0098FF;
 }
+
+#temp {
+	font-family: "helvetica neue", sans serif;
+	font-weight: 100;
+	color: #ffffff;
+	font-size: 48px;
+	text-align: center;
+	position: relative;
+	top: 200px;
+
+}

@@ -64,18 +64,28 @@ $(document).ready(function(){
 	
 	/* 3. insert weather data into app and style  */
 	
-	function parseWeather(data) {
+	
+	
+	
+	function parseWeather(data){
+			
+			$('#temp').text("Currently: " + data.currently.apparentTemperature);
+	}
+	
+	/*function parseWeather(data) {
 			for ( var i=0; i< weeklyForecast.length; i++ ) {
 			var dailyWeather = weeklyForecast[i];
+			var tempColor    = data.currently.apparentTemperature;
 			//var day = $('#icon').get(i);
 			var icon = parseDay(dailyWeather);
 			var img= $('<img>');
 			img.attr("src","images/" + data.currently.icon + ".png");
 			img.appendTo('#today');
+			$('#temp').text("Currently: " + data.currently.apparentTemperature);
 			}	
 			
 		}		
-			console.log(daily)
+			console.log(tempColor)
 	function parseDay(condition) {
 			
 			switch(condition) {
@@ -88,5 +98,5 @@ $(document).ready(function(){
 			}
 			
 	}
-	
+	*/
 	});
