@@ -70,7 +70,8 @@ $(document).ready(function(){
 			//var day = $('#icon').get(i);
 			var icon = parseDay(dailyWeather);
 			var img= $('<img>');
-			img.attr("src","images/" + data.currently.icon + ".png")
+			img.attr("src","images/" + data.currently.icon + ".png");
+			img.appendTo('#today');
 			}	
 			
 		}		
