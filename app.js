@@ -38,7 +38,7 @@ $(document).ready(function(){
 	function getWeatherWithPos(Lat,Lng) {
 			// construct the url to request
 			apiURL += "/" + Lat + "," + Lng;
-			console.log(apiURl);
+			console.log(apiURL);
 			
 			//make a request to forecast.io
 			
@@ -65,25 +65,27 @@ $(document).ready(function(){
 	/* 3. insert weather data into app and style  */
 	
 	function parseWeather(data) {
-			var weeklyForecast = daily.data.icon;
 			for ( var i=0; i< weeklyForecast.length; i++ ) {
 			var dailyWeather = weeklyForecast[i];
 			var day = $('#icon').get(i);
 			var icon = parseDay(dailyWeather);
-			$(icon).add( <img src="", icon );
-			}			
+			var img= $('<img>');
+			img.attr("src","images/" + data.currently.icon + ".png")
+			}	
 			
+		}		
+			console.log(day)
 	function parseDay(condition) {
 			
 			switch(condition) {
 			case "clear-day":
-			var icon = "<img src="images/sunny.png" />";
+			var icon = '<img src="'+images/sunny.png+'" />';
 			case "clear-night":
-			var icon ="<img src="images/night.png" />";
+			var icon = '<img src="'+images/night.png+'" />';
 			case "rain":
-			var icon="<img src="images/rain.png"/>
+			var icon= '<img src="'+images/rain.png+'"/>';
 			}
 			
 	}
-			
-	};
+	
+	});
