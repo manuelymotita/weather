@@ -66,7 +66,7 @@ $(document).ready(function(){
 	
 	function parseWeather(data) {
 			for ( var i=0; i< weeklyForecast.length; i++ ) {
-			var dailyWeather = weeklyForecast[i];
+			var dailyWeather = daily.length[i];
 			//var day = $('#icon').get(i);
 			var icon = parseDay(dailyWeather);
 			var img= $('<img>');
@@ -75,7 +75,7 @@ $(document).ready(function(){
 			}	
 			
 		}		
-			console.log(dailyWeather)
+			console.log(daily)
 	function parseDay(condition) {
 			
 			switch(condition) {
