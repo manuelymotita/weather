@@ -74,7 +74,7 @@ $(document).ready(function(){
 			}	
 			
 		}		
-			console.log(parseWeather)
+			console.log(dailyWeather)
 	function parseDay(condition) {
 			
 			switch(condition) {
