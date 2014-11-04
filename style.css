@@ -1,15 +1,15 @@
 
 html {
-	background-color: #FF5B00;
+	background-color: #efefef;
 	text-align: center;
 }
 
 #icon {
+	width:60%;
 	margin: auto;
 	padding: auto;
-	width: 50%;
 	height: 800px;
-	background-color: #0098FF;
+	background-color: #f26d00;
 	-webkit-border-radius: 1000px;
 	border-radius: 1000px;
 }
