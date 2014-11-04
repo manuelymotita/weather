@@ -17,7 +17,7 @@
 	font-size: 48px;
 	text-align: center;
 	position: relative;
-	top: 300px;
+	top: 400px;
 
 }
 
@@ -28,5 +28,15 @@
 	font-size: 48px;
 	text-align: center;
 	position: relative;
-	top: 260px;
+	top: 360px;
+}
+
+img{
+	width: 250px;
+	height: auto;
+	position: relative;
+	bottom: 90px;
+	left: 230px;
+	margin: auto;
+	padding: auto;
 }

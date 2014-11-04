@@ -68,10 +68,57 @@ $(document).ready(function(){
 	
 	
 	function parseWeather(data){
-			
-			$('#temp').text("Currently: " + data.currently.apparentTemperature);
+			$('#temp').text("Currently: " + (Math.round(data.currently.apparentTemperature)));
 			$('#sum').text(data.currently.summary);
+			
+			for ( var i = 0; i < data.daily.data.length; i++ ){
+				var dayObject = data.daily.data[i];
+			}
+			
+			var today = data.daily.data[0];
+			var tomorrow = data.daily.data[1];
+			var dayAfterTomorrow = data.daily.data[2];	
+			
+			/*
+			var img = $('<img>');
+			img.attr("src","images/" + today.icon + ".png");
+			img.appendTo('#icon');
+			*/
+			console.log(today);
+			var imageFile = parseIcon(today.icon);
+			console.log(imageFile);
+			
+			// <img src="yourfilehere.png"/>
+			var img = $('<img>');
+			img.attr("src","images/" + imageFile);
+			img.appendTo('#icon');
 	}
+	
+	function parseIcon(icon){
+
+    	switch(icon) {
+    		case "clear-day":
+    		case "clear-night":	
+                var color = "sunny.png";
+                break;
+    		case "rain":
+    		case "snow":
+    		case "sleet":
+                var color = "snow.png";
+                break;
+    		case "wind":
+    		case "fog":
+    		case "cloudy":
+    		case "partly-cloudy-day":
+    		case "partly-cloudy-night":
+                var color = "night.png";
+                break;
+    		default:
+    			break;	
+    	}
+        return color;
+
+    }
 	
 	/*function parseWeather(data) {
 			for ( var i=0; i< weeklyForecast.length; i++ ) {
