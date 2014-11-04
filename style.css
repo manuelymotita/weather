@@ -1,4 +1,8 @@
 
+html {
+	background-color: #efefef;
+	text-align: center;
+}
 
 #icon {
 	margin: auto;
@@ -36,7 +40,7 @@ img{
 	height: auto;
 	position: relative;
 	bottom: 90px;
-	left: 230px;
+	/*left: 230px;*/
 	margin: auto;
 	padding: auto;
 }
