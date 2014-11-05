@@ -79,7 +79,7 @@ $(document).ready(function(){
 				var dayObject = data.daily.data[i];
 			}
 			
-			var today = data.daily.data[0];
+			var today = data.currently.apparentTemperature;
 			var tomorrow = data.daily.data[1];
 			var dayAfterTomorrow = data.daily.data[2];	
 			console.log(tomorrow.temperatureMin);
@@ -89,7 +89,7 @@ $(document).ready(function(){
 			img.appendTo('#icon');
 			*/
 			console.log(today);
-			var imageFile = parseIcon(today.icon);
+			var imageFile = parseIcon(data.currently.icon);
 			console.log(imageFile);
 			
 			// <img src="yourfilehere.png"/>
@@ -97,7 +97,7 @@ $(document).ready(function(){
 			img.attr("src","images/" + imageFile);
 			img.appendTo('#icon');
 	}
-	console.log(today.icon)
+	console.log(currently.icon)
 	function parseIcon(icon){
 
     	switch(icon) {
