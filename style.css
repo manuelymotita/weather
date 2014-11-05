@@ -43,6 +43,15 @@ p {
 	font-size: 48px;
 }
 
+#day{
+	font-family: "helvetica neue", sans serif;
+	font-weight: 400;
+	font-size: 28px;
+	color: #ffffff;
+	position: relative;
+	top: 30px;
+}
+
 #temp1 {
 	width: 100px;
 	-webkit-border-radius: 1000px;
