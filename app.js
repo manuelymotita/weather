@@ -68,8 +68,12 @@ $(document).ready(function(){
 	
 	
 	function parseWeather(data){
-			$('#temp').text("Currently: " + (Math.round(data.currently.apparentTemperature)));
+			$('#temp1').text((Math.round(data.currently.apparentTemperature)));
 			$('#sum').text(data.currently.summary);
+			$('#temp2').text(Math.round(data.daily.data[1].temperatureMin));
+			$('#sum2').text(data.daily.data[1].summary);
+			$('#temp3').text(Math.round(data.daily.data[2].temperatureMin));
+			$('#sum3').text(data.daily.data[2].summary);
 			
 			for ( var i = 0; i < data.daily.data.length; i++ ){
 				var dayObject = data.daily.data[i];
@@ -78,7 +82,7 @@ $(document).ready(function(){
 			var today = data.daily.data[0];
 			var tomorrow = data.daily.data[1];
 			var dayAfterTomorrow = data.daily.data[2];	
-			
+			console.log(tomorrow.temperatureMin);
 			/*
 			var img = $('<img>');
 			img.attr("src","images/" + today.icon + ".png");

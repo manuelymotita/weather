@@ -4,7 +4,7 @@ html {
 	text-align: center;
 }
 
-#icon {
+#today{
 	width:60%;
 	margin: auto;
 	padding: auto;
@@ -14,20 +14,29 @@ html {
 	border-radius: 1000px;
 }
 
-#temp {
+#tomorrow{
+	width:100%
+	text-align:left;
+	height: 200px;
+	
+}
+
+p {
 	font-family: "helvetica neue", sans serif;
-	font-weight: 200;
+	font-weight: 200;	
+}
+
+#temp1 {
 	color: #ffffff;
 	font-size: 48px;
 	text-align: center;
 	position: relative;
-	top: 400px;
+	top: 150px;
+	left: 180px;
 
 }
 
 #sum{
-	font-family: "helvetica neue", sans serif;
-	font-weight: 200;
 	color: #ffffff;
 	font-size: 48px;
 	text-align: center;
@@ -43,4 +52,8 @@ img{
 	/*left: 230px;*/
 	margin: auto;
 	padding: auto;
+}
+
+.degrees:after {
+	content: "\00b0";
 }
