@@ -3,11 +3,12 @@ html {
 	background-color: #efefef;
 	text-align: center;
 }
-
+* {
+	margin: 0px;
+	padding: 0px;
+}
 #today{
 	width:100%;
-	margin: auto;
-	padding: auto;
 	height: 750px;
 	background-color: #ff7406;
 	/*-webkit-border-radius: 1000px;
@@ -15,8 +16,8 @@ html {
 }
 
 #tomorrow{
-	margin: 0px;
-	padding; 15px;
+	margin-top: 0px;
+	padding-top; 0px;
 	background-color:#cbe007;
 	width:100%
 	text-align:left;
@@ -26,6 +27,7 @@ html {
 
 #dayAfter{
 	background-color: #2da0c9;
+	height: 300px;
 }
 
 p {
@@ -45,8 +47,6 @@ p {
 	position: relative;
 	top: 150px;
 	left: 610px;
-	
-
 }
 
 #sum{
@@ -54,7 +54,31 @@ p {
 	font-size: 48px;
 	text-align: center;
 	position: relative;
-	top: 360px;
+	top: 300px;
+}
+
+#temp2{
+	color:#ffffff;
+	position:relative;
+	top:80px;
+}
+
+#sum2{
+	color:#ffffff;
+	position:relative;
+	top:60px;
+}
+
+#temp3{
+	color:#ffffff;
+	position:relative;
+	top:80px;
+}
+
+#sum3{
+	color:#ffffff;
+	position:relative;
+	top:60px;
 }
 
 img{
