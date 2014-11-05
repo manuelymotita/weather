@@ -5,13 +5,13 @@ html {
 }
 
 #today{
-	width:60%;
+	width:100%;
 	margin: auto;
 	padding: auto;
 	height: 750px;
 	background-color: #f26d00;
-	-webkit-border-radius: 1000px;
-	border-radius: 1000px;
+	/*-webkit-border-radius: 1000px;
+	border-radius: 1000px;*/
 }
 
 #tomorrow{
@@ -23,16 +23,21 @@ html {
 
 p {
 	font-family: "helvetica neue", sans serif;
-	font-weight: 400;	
+	font-weight: 400;
 }
 
 #temp1 {
-	color: #ffffff;
+	width: 100px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
+	background-color: #ffffff;
+	color: #f26d00;
 	font-size: 48px;
 	text-align: center;
 	position: relative;
 	top: 150px;
-	left: 180px;
+	left: 880px;
+	
 
 }
 
