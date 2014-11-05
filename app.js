@@ -102,11 +102,16 @@ $(document).ready(function(){
 
     	switch(icon) {
     		case "clear-day":
+    			var img = "sunny.png";
+                break;
     		case "clear-night":	
-                var img = "sunny.png";
+                var img = "night.png";
                 break;
     		case "rain":
+    			var img = "rain.png";
+    			break;
     		case "snow":
+    			var img= "snow.png"
     		case "sleet":
                 var img = "snow.png";
                 break;
