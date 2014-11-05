@@ -1,6 +1,6 @@
 
 html {
-	background-color: #efefef;
+	background-color: #ffffff;
 	text-align: center;
 }
 * {
@@ -9,10 +9,10 @@ html {
 }
 
 #loader{
-	width: 100%;
+	width: 50%;
 	height: auto;
 	position: relative;
-	top: 400px;
+	top: 200px;
 }
 
 .wrapper {
