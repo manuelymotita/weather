@@ -8,6 +8,9 @@ html {
 	padding: 0px;
 }
 
+.wrapper {
+	display:none;
+}
 
 #today{
 	width:100%;

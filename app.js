@@ -52,6 +52,7 @@ $(document).ready(function(){
 						console.log(response);
 						parseWeather(response);
 						$('#loader').remove();
+						$('#wrapper').removeClass("wrapper");
 				},
 				error: function (xhr, status) {
 						//the Request failed
