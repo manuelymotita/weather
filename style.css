@@ -8,6 +8,13 @@ html {
 	padding: 0px;
 }
 
+#loader{
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: 400px;
+}
+
 .wrapper {
 	display:none;
 }
