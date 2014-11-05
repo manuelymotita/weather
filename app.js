@@ -116,11 +116,19 @@ $(document).ready(function(){
                 var img = "snow.png";
                 break;
     		case "wind":
+    			var img = "wind.png";
+    			break;
     		case "fog":
+    			var img = "fog.png";
+    			break;
     		case "cloudy":
+    			var img = "cloudy.png";
+    			break;
     		case "partly-cloudy-day":
+    			var img ="cloudyDay.png";
+    			break;
     		case "partly-cloudy-night":
-                var img = "night.png";
+                var img = "cloudyNight.png";
                 break;
     		default:
     			break;	
