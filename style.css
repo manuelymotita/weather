@@ -9,21 +9,29 @@ html {
 	margin: auto;
 	padding: auto;
 	height: 750px;
-	background-color: #f26d00;
+	background-color: #ff7406;
 	/*-webkit-border-radius: 1000px;
 	border-radius: 1000px;*/
 }
 
 #tomorrow{
+	margin: 0px;
+	padding; 15px;
+	background-color:#cbe007;
 	width:100%
 	text-align:left;
-	height: 200px;
+	height: 300px;
 	
+}
+
+#dayAfter{
+	background-color: #2da0c9;
 }
 
 p {
 	font-family: "helvetica neue", sans serif;
 	font-weight: 400;
+	font-size: 48px;
 }
 
 #temp1 {

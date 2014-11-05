@@ -97,30 +97,30 @@ $(document).ready(function(){
 			img.attr("src","images/" + imageFile);
 			img.appendTo('#icon');
 	}
-	
+	console.log(today.icon)
 	function parseIcon(icon){
 
     	switch(icon) {
     		case "clear-day":
     		case "clear-night":	
-                var color = "sunny.png";
+                var img = "sunny.png";
                 break;
     		case "rain":
     		case "snow":
     		case "sleet":
-                var color = "snow.png";
+                var img = "snow.png";
                 break;
     		case "wind":
     		case "fog":
     		case "cloudy":
     		case "partly-cloudy-day":
     		case "partly-cloudy-night":
-                var color = "night.png";
+                var img = "night.png";
                 break;
     		default:
     			break;	
     	}
-        return color;
+        return img;
 
     }
 	
