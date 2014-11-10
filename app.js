@@ -99,7 +99,7 @@ $(document).ready(function(){
 			img.attr("src","images/" + imageFile);
 			img.appendTo('#icon');
 	}
-	console.log(currently.icon)
+	console.log(data.currently.icon)
 	function parseIcon(icon){
 
     	switch(icon) {
