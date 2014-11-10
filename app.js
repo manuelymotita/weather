@@ -15,7 +15,7 @@ $(document).ready(function(){
 			navigator.geolocation.getCurrentPosition(success, error);
 	}
 	else {
-		prompt("unable to access locatoin");
+		$('#error').text("Unable to find location")
 	}
 	
 	// Received a Latitude/Longitude from the browser
@@ -58,6 +58,7 @@ $(document).ready(function(){
 						//the Request failed
 						console.log(status);
 						$('#loader').remove();
+						$('#error').removeClass("hidden");
 						showError();
 						}
 						});
