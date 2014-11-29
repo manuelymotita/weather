@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+
+	$("#owl-example").owlCarousel();
+	$(window).on("orientationchange",function() {
+		if(window.orientation == 0) {$('#portrait').removeClass("hidden");}
+		else {$('#landscape').removeClass("hidden")}
+	});
+
 	//setup variables for forecast.io request
 	var apiKey = '7fcd24394c2f24957329647a69e4c63f' ;
 	var apiURL = 'https://api.forecast.io/forecast/' + apiKey;
@@ -67,20 +74,29 @@ $(document).ready(function(){
 	/* 3. insert weather data into app and style  */
 	
 	
-	
-	
 	function parseWeather(data){
+			
+			var week = data.daily.data;
+			
 			$('#temp1').text((Math.round(data.currently.apparentTemperature)));
 			$('#sum').text(data.currently.summary);
-			$('#temp2').text(Math.round(data.daily.data[1].temperatureMin));
-			$('#sum2').text(data.daily.data[1].summary);
-			$('#temp3').text(Math.round(data.daily.data[2].temperatureMin));
-			$('#sum3').text(data.daily.data[2].summary);
+			$('#temp2').text(Math.round(week[1].temperatureMin));
+			$('#sum2').text(week[1].summary);
+			$('#temp3').text(Math.round(week[2].temperatureMin));
+			$('#sum3').text(week[2].summary);
+			//portrait
+			$('#day2').text(Math.round(week[2].temperatureMin));
+			$('#day3').text(Math.round(week[3].temperatureMin));
+			$('#day4').text(Math.round(week[4].temperatureMin));
+			$('#day5').text(Math.round(week[5].temperatureMin));
+			$('#day6').text(Math.round(week[6].temperatureMin));
+			$('#day7').text(Math.round(week[7].temperatureMin));
+			
 			
 			for ( var i = 0; i < data.daily.data.length; i++ ){
 				var dayObject = data.daily.data[i];
 			}
-			
+			console.log(week);
 			var today = data.currently.apparentTemperature;
 			var tomorrow = data.daily.data[1];
 			var dayAfterTomorrow = data.daily.data[2];	
@@ -98,8 +114,8 @@ $(document).ready(function(){
 			var img = $('<img>');
 			img.attr("src","images/" + imageFile);
 			img.appendTo('#icon');
+	console.log(data.currently.icon);
 	}
-	console.log(data.currently.icon)
 	function parseIcon(icon){
 
     	switch(icon) {
