@@ -2,12 +2,15 @@ $(document).ready(function(){
 
 
 	$("#owl-example").owlCarousel();
-	$(window).on("orientationchange",function() {
-		if(window.orientation == 0) {$('#portrait').removeClass("hidden");}
-		else {$('#landscape').removeClass("hidden");
-		$('#portrait').addClass("hidden");
-		
-		} 
+	$(window).on("orientationchange",function()
+	{
+	 if(window.orientation == 0)
+	   {$('#portrait').removeClass("hidden");
+		$('#landscape').addClass("hidden");
+	   }
+	 else 
+	   {$('#landscape').removeClass("hidden");
+		$('#portrait').addClass("hidden");} 
 	});
 
 	//setup variables for forecast.io request
