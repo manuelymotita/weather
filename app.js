@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 
 	$("#owl-example").owlCarousel();
+	
 	$(window).on("orientationchange",function()
 	{
 	 if(window.orientation == 0)
