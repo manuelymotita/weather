@@ -116,14 +116,21 @@ $(document).ready(function(){
 			$('#sum3').text(week[2].summary);
 			//portrait
 			$('#day1').text(Math.round(week[0].temperatureMin));
-			$('#day1').text(week[0].summary);
+			$('#d1').text(week[0].summary);
 			$('#day2').text(Math.round(week[1].temperatureMin));
+			$('#d2').text(week[1].summary);
 			$('#day3').text(Math.round(week[2].temperatureMin));
+			$('#d3').text(week[2].summary);
 			$('#day4').text(Math.round(week[3].temperatureMin));
+			$('#d4').text(week[3].summary);
 			$('#day5').text(Math.round(week[4].temperatureMin));
+			$('#d5').text(week[4].summary);
 			$('#day6').text(Math.round(week[5].temperatureMin));
+			$('#d6').text(week[5].summary);
 			$('#day7').text(Math.round(week[6].temperatureMin));
+			$('#d7').text(week[6].summary);
 			$('#day8').text(Math.round(week[7].temperatureMin));
+			$('#d8').text(week[7].summary);
 			
 			
 			for ( var i = 0; i < data.daily.data.length; i++ ){
