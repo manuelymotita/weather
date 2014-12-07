@@ -93,7 +93,7 @@ $(document).ready(function(){
 			// or add them one by one
 			var image = parseIcon(week[0].icon);
 			$('<img>').attr("src","images/" + image).appendTo('#day1');
-			var image = parseIcon(data.daily.data[1].icon);
+			var image = parseIcon(week[1].icon);
 			$('<img>').attr("src","images/" + image).appendTo('#day2');
 			var image = parseIcon(week[2].icon);
 			$('<img>').attr("src","images/" + image).appendTo('#day3');
@@ -116,6 +116,7 @@ $(document).ready(function(){
 			$('#sum3').text(week[2].summary);
 			//portrait
 			$('#day1').text(Math.round(week[0].temperatureMin));
+			$('#day1').text(week[0].summary);
 			$('#day2').text(Math.round(week[1].temperatureMin));
 			$('#day3').text(Math.round(week[2].temperatureMin));
 			$('#day4').text(Math.round(week[3].temperatureMin));
