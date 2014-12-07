@@ -180,3 +180,15 @@ p {
 	background-color: #2da0c9;
 	
 }
+
+#d1 {
+	width: 100px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
+	background-color: #ffffff;
+	color:#2da0c9;
+	position:relative;
+	top:80px;
+	margin: auto;
+	padding: auto;
+}
