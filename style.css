@@ -137,7 +137,6 @@ img{
 	content: "\00b0";
 }
 
-.week1 {
-	height: 300px;
-	color: #cecece;
+#owl-demo .item {
+	background-color: #2da0c9;
 }
