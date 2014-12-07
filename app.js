@@ -40,7 +40,7 @@ $(document).ready(function(){
 	//unable to find a lat/long
 	function error(error) {
 			console.log(error);
-			getWeatherWithoutPos (position.coords.latitude,position.coords.longitude);
+			getWeatherWithPos(defaultLat, defaultLng);
 	}
 	
 	/*
@@ -83,6 +83,29 @@ $(document).ready(function(){
 	function parseWeather(data){
 			
 			var week = data.daily.data;
+			for (var i = 0; i < week.length; i++){
+				var image = parseIcon(week[i].icon);
+				console.log(image);
+				//  you can optionally add your images in a loop
+			}
+			
+			// or add them one by one
+			var image = parseIcon(week[0].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day1');
+			var image = parseIcon(week[1].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day2');
+			var image = parseIcon(week[2].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day3');
+			var image = parseIcon(week[3].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day4');
+			var image = parseIcon(week[4].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day5');
+			var image = parseIcon(week[5].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day6');
+			var image = parseIcon(week[6].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day7');
+			var image = parseIcon(week[7].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day8');
 			
 			$('#temp1').text((Math.round(data.currently.apparentTemperature)));
 			$('#sum').text(data.currently.summary);
@@ -91,12 +114,14 @@ $(document).ready(function(){
 			$('#temp3').text(Math.round(week[2].temperatureMin));
 			$('#sum3').text(week[2].summary);
 			//portrait
-			$('#day2').text(Math.round(week[2].temperatureMin));
-			$('#day3').text(Math.round(week[3].temperatureMin));
-			$('#day4').text(Math.round(week[4].temperatureMin));
-			$('#day5').text(Math.round(week[5].temperatureMin));
-			$('#day6').text(Math.round(week[6].temperatureMin));
-			$('#day7').text(Math.round(week[7].temperatureMin));
+			$('#day1').text(Math.round(week[0].temperatureMin));
+			$('#day2').text(Math.round(week[1].temperatureMin));
+			$('#day3').text(Math.round(week[2].temperatureMin));
+			$('#day4').text(Math.round(week[3].temperatureMin));
+			$('#day5').text(Math.round(week[4].temperatureMin));
+			$('#day6').text(Math.round(week[5].temperatureMin));
+			$('#day7').text(Math.round(week[6].temperatureMin));
+			$('#day8').text(Math.round(week[7].temperatureMin));
 			
 			
 			for ( var i = 0; i < data.daily.data.length; i++ ){
