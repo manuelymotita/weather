@@ -81,8 +81,7 @@ $(document).ready(function(){
 	/* 3. insert weather data into app and style  */
 	
 	
-	function parseWeather(data){
-			
+	
 			
 			$('#temp1').text((Math.round(data.currently.apparentTemperature)));
 			$('#sum').text(data.currently.summary);
@@ -107,6 +106,8 @@ $(document).ready(function(){
 			$('#d7').text(week[6].summary);
 			$('#day8').text(Math.round(week[7].temperatureMin));
 			$('#d8').text(week[7].summary);
+			
+			function parseWeather(data){
 			
 			var week = data.daily.data;
 			for (var i = 0; i < week.length; i++){
