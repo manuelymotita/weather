@@ -179,7 +179,7 @@ p {
 
 #d1, #d2, #d3, #d4,
 #d5, #d6, #d7, #d8 {
-	width: 90px;
+	width: 70px;
 	-webkit-border-radius: 1000px;
 	border-radius: 1000px;
 	background-color: #ffffff;
@@ -187,4 +187,5 @@ p {
 	position:relative;
 	margin: auto;
 	padding: auto;
+	top: 15px;
 }
