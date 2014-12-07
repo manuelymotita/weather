@@ -99,7 +99,7 @@ $(document).ready(function(){
 			$('#temp3').text(Math.round(week[2].temperatureMin));
 			$('#sum3').text(week[2].summary);
 			//portrait
-			$('#day1').text(Math.round(week[0].temperatureMin));
+			$('#d1').text(Math.round(week[0].temperatureMin));
 			$('#d1').text(week[0].summary);
 			$('#day2').text(Math.round(week[1].temperatureMin));
 			$('#d2').text(week[1].summary);
