@@ -36,11 +36,18 @@ html {
 	top: 110px;
 	}
 
-img{
+img:First-child{
 	width: 55%;
 	height: auto;
 	position: relative;
 	
+	margin: auto;
+	padding: auto;
+}
+
+img{
+	width: 80%;
+	height: auto;
 	margin: auto;
 	padding: auto;
 }
