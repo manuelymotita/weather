@@ -80,7 +80,14 @@ $(document).ready(function(){
 	
 	/* 3. insert weather data into app and style  */
 	
-	
+		function parseWeather(data){
+			
+			var week = data.daily.data;
+			for (var i = 0; i < week.length; i++){
+				var image = parseIcon(week[i].icon);
+				console.log(image);
+				//  you can optionally add your images in a loop
+			}
 	
 			
 			$('#temp1').text((Math.round(data.currently.apparentTemperature)));
@@ -107,14 +114,7 @@ $(document).ready(function(){
 			$('#day8').text(Math.round(week[7].temperatureMin));
 			$('#d8').text(week[7].summary);
 			
-			function parseWeather(data){
-			
-			var week = data.daily.data;
-			for (var i = 0; i < week.length; i++){
-				var image = parseIcon(week[i].icon);
-				console.log(image);
-				//  you can optionally add your images in a loop
-			}
+		
 			
 			// or add them one by one
 			var image = parseIcon(week[0].icon);
