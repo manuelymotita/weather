@@ -124,7 +124,7 @@ p {
 }
 
 img{
-	width: 350px;
+	width: 20%;
 	height: auto;
 	position: relative;
 	bottom: 60px;
@@ -141,46 +141,54 @@ img{
 	background-color: #2da0c9;
 	width: 120%;
 	height: 100%;
+	padding: 20px;
 }
 
 #day2{
 	background-color: #2da0c9;
 	width: 120%;
 	height: 100%;
+	padding: 20px;
 }
 
 #day3{
 	background-color: #2da0c9;
 	width: 120%;
 	height: 100%;
+	padding: 20px;
 }
 
 #day4{
 	background-color: #2da0c9;
 	width: 120%;
 	height: 100%;
+	padding: 20px;
 }
 
 #day5{
 	background-color: #2da0c9;
 	width: 120%;
 	height: 100%;
+	padding: 20px;
 }
 
 #day6{
 	background-color: #2da0c9;
 	width: 120%;
 	height: 100%;
+	padding: 20px;
 }
 
 #day7{
 	background-color: #2da0c9;
 	width: 120%;
 	height: 100%;
+	padding: 20px;
 }
 
 #day8{
 	background-color: #2da0c9;
 	width: 120%;
 	height: 100%;
+	padding: 20px;
 }
