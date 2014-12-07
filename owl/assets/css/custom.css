@@ -126,10 +126,9 @@ padding: 8px 12px;
 	text-align: center;
 }
 #owl-example .item img{
-	width: 60%;
+	width: auto;
 	margin: 0 auto;
 	display: block;
-	padding: 10px;
 }
 #owl-example .item h3{
 	font-size: 28px;
