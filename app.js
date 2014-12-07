@@ -116,6 +116,23 @@ $(document).ready(function(){
 			$('#day8').text(Math.round(week[7].temperatureMin));
 			$('#d8').text(week[7].summary);
 			
+			// or add them one by one
+			var image = parseIcon(week[0].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day1');
+			var image = parseIcon(week[1].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day2');
+			var image = parseIcon(week[2].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day3');
+			var image = parseIcon(week[3].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day4');
+			var image = parseIcon(week[4].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day5');
+			var image = parseIcon(week[5].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day6');
+			var image = parseIcon(week[6].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day7');
+			var image = parseIcon(week[7].icon);
+			$('<img>').attr("src","images/" + image).appendTo('#day8');
 			
 			for ( var i = 0; i < data.daily.data.length; i++ ){
 				var dayObject = data.daily.data[i];
