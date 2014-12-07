@@ -196,31 +196,5 @@ $(document).ready(function(){
 
     }
 	
-	/*function parseWeather(data) {
-			for ( var i=0; i< weeklyForecast.length; i++ ) {
-			var dailyWeather = weeklyForecast[i];
-			var tempColor    = data.currently.apparentTemperature;
-			//var day = $('#icon').get(i);
-			var icon = parseDay(dailyWeather);
-			var img= $('<img>');
-			img.attr("src","images/" + data.currently.icon + ".png");
-			img.appendTo('#today');
-			$('#temp').text("Currently: " + data.currently.apparentTemperature);
-			}	
-			
-		}		
-			console.log(tempColor)
-	function parseDay(condition) {
-			
-			switch(condition) {
-			case "clear-day":
-			var icon = '<img src="'+images/sunny.png+'" />';
-			case "clear-night":
-			var icon = '<img src="'+images/night.png+'" />';
-			case "rain":
-			var icon= '<img src="'+images/rain.png+'"/>';
-			}
-			
-	}
-	*/
+	
 	});
