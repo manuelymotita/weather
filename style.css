@@ -2,7 +2,6 @@
 html {
 	background-color: #ffffff;
 	text-align: center;
-	background-color: #d8d8d8;
 }
 * {
 	margin: 0px;
@@ -202,5 +201,4 @@ p {
 #landscape {
 	Position: relative;
 	top: 200px;
-	background-color: #ffe780;
 }
