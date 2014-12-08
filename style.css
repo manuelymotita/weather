@@ -36,7 +36,7 @@ html {
 	top: 110px;
 	}
 
-img:First-child{
+#icon img{
 	width: 55%;
 	height: auto;
 	position: relative;
