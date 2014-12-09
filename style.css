@@ -166,13 +166,19 @@ p {
 	top: 15px;
 }
 
+#icon1, #icon2, #icon3, #icon4,
+#icon5, #icon6, #icon7, #icon8 {
+	position: relative;
+	top: 20px;
+}
+
 #s1, #s2, #s3, #s4,
 #s5, #s6, #s7, #s8 {
 	font-size: 16px;
 	height: 100px;
 	color: #FFFFFF;
 	position: relative;
-	/*top: 20px;*/
+	top: 20px;
 	overflow: scroll;
 }
 
