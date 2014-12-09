@@ -58,13 +58,13 @@ img{
 	background-color:#cbe007;
 	width:100%
 	text-align:left;
-	height: 300px;
+	height: auto;
 	
 }
 
 #dayAfter{
 	background-color: #2da0c9;
-	height: 300px;
+	height: auto;
 }
 
 p {
