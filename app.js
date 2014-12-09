@@ -118,21 +118,21 @@ $(document).ready(function(){
 			
 			// or add them one by one
 			var image = parseIcon(week[0].icon);
-			$('<img>').attr("src","images/" + image).appendTo('#day1');
+			$('<img>').attr("src","images/" + image).appendTo('#icon1');
 			var image = parseIcon(week[1].icon);
-			$('<img>').attr("src","images/" + image).appendTo('#day2');
+			$('<img>').attr("src","images/" + image).appendTo('#icon2');
 			var image = parseIcon(week[2].icon);
-			$('<img>').attr("src","images/" + image).appendTo('#day3');
+			$('<img>').attr("src","images/" + image).appendTo('#icon3');
 			var image = parseIcon(week[3].icon);
-			$('<img>').attr("src","images/" + image).appendTo('#day4');
+			$('<img>').attr("src","images/" + image).appendTo('#icon4');
 			var image = parseIcon(week[4].icon);
-			$('<img>').attr("src","images/" + image).appendTo('#day5');
+			$('<img>').attr("src","images/" + image).appendTo('#icon5');
 			var image = parseIcon(week[5].icon);
-			$('<img>').attr("src","images/" + image).appendTo('#day6');
+			$('<img>').attr("src","images/" + image).appendTo('#icon6');
 			var image = parseIcon(week[6].icon);
-			$('<img>').attr("src","images/" + image).appendTo('#day7');
+			$('<img>').attr("src","images/" + image).appendTo('#icon7');
 			var image = parseIcon(week[7].icon);
-			$('<img>').attr("src","images/" + image).appendTo('#day8');
+			$('<img>').attr("src","images/" + image).appendTo('#icon8');
 			
 			for ( var i = 0; i < data.daily.data.length; i++ ){
 				var dayObject = data.daily.data[i];
