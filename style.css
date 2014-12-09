@@ -200,10 +200,9 @@ p {
 
 #s1, #s2, #s3, #s4,
 #s5, #s6, #s7, #s8 {
-	font-size: 14px
+	font-size: 14px;
 	height: 100px;
 	color: #FFFFFF;
-	
 }
 
 #landscape {
