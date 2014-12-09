@@ -144,45 +144,10 @@ p {
 }
 
 
-#day1{
-	background-color: #2da0c9;
-	padding: 10px;
-
-}
-
-#day2{
+#day1, #day2, #day3, #day4,
+#day6, #day7, #day8 {
 	background-color: #2da0c9;
 
-}
-
-#day3{
-	background-color: #2da0c9;
-
-}
-
-#day4{
-	background-color: #2da0c9;
-	
-}
-
-#day5{
-	background-color: #2da0c9;
-
-}
-
-#day6{
-	background-color: #2da0c9;
-	
-}
-
-#day7{
-	background-color: #2da0c9;
-
-}
-
-#day8{
-	background-color: #2da0c9;
-	
 }
 
 #d1, #d2, #d3, #d4,
