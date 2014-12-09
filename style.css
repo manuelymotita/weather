@@ -172,7 +172,7 @@ p {
 	height: 60px;
 	color: #FFFFFF;
 	position: relative;
-	top: 20px;
+	/*top: 20px;*/
 	overflow: scroll;
 }
 
