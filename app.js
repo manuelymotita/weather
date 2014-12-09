@@ -100,21 +100,21 @@ $(document).ready(function(){
 			$('#sum3').text(week[2].summary);
 			//portrait
 			$('#d1').text(Math.round(week[0].temperatureMin));
-			//$('#d1').text(week[0].summary);
+			$('#s1').text(week[0].summary);
 			$('#d2').text(Math.round(week[1].temperatureMin));
-			//$('#d2').text(week[1].summary);
+			$('#s2').text(week[1].summary);
 			$('#d3').text(Math.round(week[2].temperatureMin));
-			//$('#d3').text(week[2].summary);
+			$('#s3').text(week[2].summary);
 			$('#d4').text(Math.round(week[3].temperatureMin));
-			//$('#d4').text(week[3].summary);
+			$('#s4').text(week[3].summary);
 			$('#d5').text(Math.round(week[4].temperatureMin));
-			//$('#d5').text(week[4].summary);
+			$('#s5').text(week[4].summary);
 			$('#d6').text(Math.round(week[5].temperatureMin));
-			//$('#d6').text(week[5].summary);
+			$('#s6').text(week[5].summary);
 			$('#d7').text(Math.round(week[6].temperatureMin));
-			//$('#d7').text(week[6].summary);
+			$('#s7').text(week[6].summary);
 			$('#d8').text(Math.round(week[7].temperatureMin));
-			//$('#d8').text(week[7].summary);
+			$('#s8').text(week[7].summary);
 			
 			// or add them one by one
 			var image = parseIcon(week[0].icon);
