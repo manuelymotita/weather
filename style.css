@@ -183,6 +183,8 @@ p {
 }
 
 #landscape {
+	margin: 0px;
+	padding: 0px;
 	background-color: #cbe007;
 	Position: relative;
 	/*top: 150px;*/
