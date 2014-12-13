@@ -185,13 +185,17 @@ p {
 #landscape h1{
 	margin: 10;
 	width: 400px;
-	color: #ffffff;
+	color: #cbe007;
 	font-family: "helvetica neue", sans serif;
 	font-weight: 400;
 	font-size: 54px;
+	background-color: #ffffff;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
 }
 
 #landscape {
+	text-align: center;
 	height: 100vh;
 	margin: 0px;
 	padding: 0px;
