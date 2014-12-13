@@ -134,6 +134,15 @@ $(document).ready(function(){
 			var image = parseIcon(week[7].icon);
 			$('<img>').attr("src","images/" + image).appendTo('#icon8');
 			
+			var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+			console.log(days);
+			var timeStamp = data.currently.time;
+			console.log(timeStamp);
+			var d = new Date();
+			console.log(d);
+			d.setTime(timeStamp*1000);
+			console.log(d.setTime);
+			
 			for ( var i = 0; i < data.daily.data.length; i++ ){
 				var dayObject = data.daily.data[i];
 			}
