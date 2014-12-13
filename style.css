@@ -183,7 +183,9 @@ p {
 }
 
 #landscape h1{
-	margin: 10;
+	text-align: center;
+	margin: auto;
+	padding: auto;
 	width: 400px;
 	color: #cbe007;
 	font-family: "helvetica neue", sans serif;
@@ -195,7 +197,6 @@ p {
 }
 
 #landscape {
-	text-align: center;
 	height: 100vh;
 	margin: 0px;
 	padding: 0px;
