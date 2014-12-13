@@ -186,3 +186,8 @@ p {
 	Position: relative;
 	top: 150px;
 }
+
+.title {
+	font-size: 14px;
+	color: #ffffff;
+}
