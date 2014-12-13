@@ -75,7 +75,7 @@ p {
 
 #day{
 	font-family: "helvetica neue", sans serif;
-	font-weight: 400;
+	font-weight: 200;
 	font-size: 28px;
 	color: #ffffff;
 	position: relative;
@@ -100,7 +100,7 @@ p {
 	font-size: 48px;
 	text-align: center;
 	position: relative;
-	top: 100px;
+	top: 60px;
 }
 
 #temp2{
