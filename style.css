@@ -183,6 +183,8 @@ p {
 }
 
 #landscape h1{
+	margin: 10;
+	width: 400px;
 	color: #ffffff;
 	font-family: "helvetica neue", sans serif;
 	font-weight: 400;
