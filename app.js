@@ -90,8 +90,33 @@ $(document).ready(function(){
 				//  you can optionally add your images in a loop
 			}
 			
-		
+			//hourly
+			$('#hour1').text(Math.round(data.hourly.data[0].temperature));
+			$('#hour2').text(Math.round(data.hourly.data[1].temperature));
+			$('#hour3').text(Math.round(data.hourly.data[2].temperature));
+			$('#hour4').text(Math.round(data.hourly.data[3].temperature));
+			$('#hour5').text(Math.round(data.hourly.data[4].temperature));
+			$('#hour6').text(Math.round(data.hourly.data[5].temperature));
+			$('#hour7').text(Math.round(data.hourly.data[6].temperature));
+			$('#hour8').text(Math.round(data.hourly.data[7].temperature));
+			$('#hour9').text(Math.round(data.hourly.data[8].temperature));
+			$('#hour10').text(Math.round(data.hourly.data[9].temperature));
+			$('#hour11').text(Math.round(data.hourly.data[10].temperature));
+			$('#hour12').text(Math.round(data.hourly.data[11].temperature));
+			$('#hour13').text(Math.round(data.hourly.data[12].temperature));
+			$('#hour14').text(Math.round(data.hourly.data[13].temperature));
+			$('#hour15').text(Math.round(data.hourly.data[14].temperature));
+			$('#hour16').text(Math.round(data.hourly.data[15].temperature));
+			$('#hour17').text(Math.round(data.hourly.data[16].temperature));
+			$('#hour18').text(Math.round(data.hourly.data[17].temperature));
+			$('#hour19').text(Math.round(data.hourly.data[18].temperature));
+			$('#hour20').text(Math.round(data.hourly.data[19].temperature));
+			$('#hour21').text(Math.round(data.hourly.data[20].temperature));
+			$('#hour22').text(Math.round(data.hourly.data[21].temperature));
+			$('#hour23').text(Math.round(data.hourly.data[22].temperature));
+			$('#hour24').text(Math.round(data.hourly.data[23].temperature));
 			
+			//main
 			$('#temp1').text((Math.round(data.currently.apparentTemperature)));
 			$('#sum').text(data.currently.summary);
 			$('#temp2').text(Math.round(week[1].temperatureMin));

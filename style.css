@@ -8,6 +8,10 @@ html {
 	padding: 0px;
 }
 
+.degrees:after {
+	content: "\00b0";
+}
+
 #loader{
 	width: 50%;
 	height: auto;
@@ -21,6 +25,24 @@ html {
 
 .hidden {
 	display:none;
+}
+
+#hourly{
+	overflow: scroll;
+	height: 40px;
+	width: 40px;
+	background-color: #ffffff;
+	color: #ff7409;
+	position: relative;
+	top:300px;
+
+}
+
+.hours{
+	font-family: "helvetica neue", sans serif;
+	font-weight: 400;
+	font-size: 28px;
+	
 }
 
 #today{
@@ -139,9 +161,7 @@ p {
 	top:110px;
 }
 
-.degrees:after {
-	content: "\00b0";
-}
+
 
 
 #day1, #day3, #day5, #day7 {
