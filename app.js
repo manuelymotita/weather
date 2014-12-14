@@ -115,101 +115,286 @@ $(document).ready(function(){
 			console.log(times);
 			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
 			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
 			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t1').text(times[0] + suffix);
 			
-			$('#t1').text(d.getUTCHours() + suffix);
 			timeStamp = data.hourly.data[1].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t2').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t2').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[2].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t3').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t3').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[3].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t4').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t4').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[4].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t5').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t5').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[5].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t6').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t6').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[6].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t7').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t7').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[7].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t8').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t8').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[8].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t9').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t9').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[9].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t10').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t10').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[10].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t11').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t11').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[11].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t12').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t12').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[12].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t13').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t13').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[13].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t14').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t14').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[14].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t15').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t15').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[15].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t16').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t16').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[16].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t17').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t17').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[17].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t18').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t18').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[18].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t19').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t19').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[19].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t20').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t20').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[20].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t21').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t21').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[21].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t22').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t22').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[22].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t23').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t23').text(times[0] + suffix);
+			
 			timeStamp = data.hourly.data[23].time;
 			d = new Date();
 			d.setTime(timeStamp*1000);
-			$('#t24').text(d.getUTCHours() + suffix);
+			var times = [ d.getHours(), d.getMinutes() ];
+			console.log(times);
+			var suffix = ( times[0] < 12 ) ? "AM" : "PM";
+			times[0] = ( times[0] < 12 ) ? times[0] : times[0] - 12;
+			console.log(times[0])
+			times[0] = times[0] || 12;
+			console.log(times[0])
+			$('#t24').text(times[0] + suffix);
 			
 			$('#hour1').text(Math.round(data.hourly.data[0].temperature));
 			$('#hour2').text(Math.round(data.hourly.data[1].temperature));
