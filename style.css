@@ -31,12 +31,11 @@ html {
 	overflow: scroll;
 	width: 200px;
 	height: 400px;
-	
 	color: #ffffff;
 	padding:auto;
 	margin:auto;
 	position: absolute;
-	bottom: 1000px;
+	
 	right: 700px;
 }
 
