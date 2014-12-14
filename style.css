@@ -30,9 +30,8 @@ html {
 #hourly{
 	overflow: scroll;
 	height: 200px;
-	width: 150px;
-	background-color: #ffffff;
-	color: #ff7409;
+	background-color: #ff9a55;
+	color: #ffffff;
 	padding:auto;
 	margin:auto;
 }
