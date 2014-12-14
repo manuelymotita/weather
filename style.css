@@ -29,11 +29,15 @@ html {
 
 #hourly{
 	overflow: scroll;
+	width: 200px;
 	height: 200px;
-	background-color: #ff9a55;
+	
 	color: #ffffff;
 	padding:auto;
 	margin:auto;
+	position: absolute;
+	bottom: 0px;
+	right: 500px;
 }
 
 .hours{
@@ -54,6 +58,7 @@ html {
 #icon{
 	position: relative;
 	top: 110px;
+	
 	}
 
 #icon img{
