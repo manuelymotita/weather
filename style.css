@@ -54,6 +54,10 @@ html {
 	font-family: "helvetica neue", sans serif;
 	font-weight: 400;
 	font-size: 38px;
+	color: #ff7406;
+	background-color: #ffffff;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
 }
 
 #today{
