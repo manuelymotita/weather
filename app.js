@@ -396,7 +396,7 @@ $(document).ready(function(){
 			console.log(times[0])
 			$('#t24').text(times[0] + suffix);
 			
-			$('#hour1').text(Math.round(data.hourly.data[0].temperature));
+			$('#hour1').text(Math.round(data.currently.apparentTemperature));
 			$('#hour2').text(Math.round(data.hourly.data[1].temperature));
 			$('#hour3').text(Math.round(data.hourly.data[2].temperature));
 			$('#hour4').text(Math.round(data.hourly.data[3].temperature));
