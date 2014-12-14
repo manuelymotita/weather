@@ -27,6 +27,10 @@ html {
 	display:none;
 }
 
+#hourly h1{
+	font-family: "helvetica neue", sans serif;
+}
+
 #hourly{
 	overflow: scroll;
 	width: 200px;
