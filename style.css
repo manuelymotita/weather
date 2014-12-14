@@ -29,7 +29,7 @@ html {
 
 #hourly{
 	overflow: scroll;
-	height: 100px;
+	height: 200px;
 	width: 150px;
 	background-color: #ffffff;
 	color: #ff7409;
