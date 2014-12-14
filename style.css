@@ -30,11 +30,10 @@ html {
 #hourly{
 	overflow: scroll;
 	height: 100px;
-	width: 100px;
+	width: 150px;
 	background-color: #ffffff;
 	color: #ff7409;
-	position: relative;
-	top:300px;
+	
 
 }
 
